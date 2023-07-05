@@ -1,9 +1,9 @@
 :root {
     --color-1: #fefefe;
     --color-2: #11101b;
-    --bg: url(res/template/bg.jpg);
-    --nav-bg: url(res/template/nav.jpg);
-    --par-bg: url(res/template/par.jpg);
+    --bg: url(./bg.jpg);
+    --nav-bg: url(./nav.jpg);
+    --par-bg: url(./par.jpg);
 }
 * {
     margin: 0;
