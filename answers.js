@@ -13,10 +13,10 @@ var guitarspeechanswer = speechguitaryes; // speechguitaryes or speechguitarno
 var guitaralbumanswer = guitarsn; // guitar + album name
 var pianospeechanswer = speechpianono; // speechpianoyes or speechpianono
 var pianoalbumanswer = pianoevermore; // piano + album name
-var midnightsanswer = ; // lightbluemidnights or pinkmidnights or purplemidnights or silversequinmidnights or combomidnights or newmidnightsdress 
-var mranswer = ; // mrnavy or mrblurple or newmrbodysuit
+var midnightsanswer = purplemidnights; // lightbluemidnights or pinkmidnights or purplemidnights or silversequinmidnights or combomidnights or newmidnightsdress 
+var mranswer = mrnavy; // mrnavy or mrblurple or newmrbodysuit
 var karmaanswer = ; // karmalightpink or or karmamulticolor or karmamagenta or nokarmajacket or newkarmajacket
-var guestanswer = ; // guestyes or guestno
+var guestanswer = guestno; // guestyes or guestno
 var unhingedanswer = unhingedyes; // unhingedyes or unhingedno
 var mishapanswer = mishapyes; // mishapyes or mishapno
 
