@@ -6,7 +6,7 @@ var evermoreanswer = orangewithflowers; // orangewithflowers or bronzeevermore o
 var cpcheeranswer = cpless2; // cpless1 or cpless2 or cpless3 or cpmore3 or cprecord
 var repanswer = blackandredsnake; // blackandredsnake or newrepjumpsuit
 var snanswer = cupcakegown; // pinkballgown or champagnegown or tissuegown or silvergown or cupcakegown or newsngown
-var shirt22answer = ; // WANEGBTshirt or WTSAEshirt or ALGOATMshirt or new22shirt
+var shirt22answer = ALGOATMshirt; // WANEGBTshirt or WTSAEshirt or ALGOATMshirt or new22shirt
 var folkloreanswer = ; // purplefolklore or creamfolklore or pinkfolklore or greenfolklore or newfolkloredress
 var set1989answer = ; // green1989 or orange1989 or pink1989 or new1989set
 var guitarspeechanswer = ; // speechguitaryes or speechguitarno
@@ -17,7 +17,7 @@ var midnightsanswer = ; // lightbluemidnights or pinkmidnights or purplemidnight
 var mranswer = ; // mrnavy or mrblurple or newmrbodysuit
 var karmaanswer = ; // karmalightpink or or karmamulticolor or karmamagenta or nokarmajacket or newkarmajacket
 var guestanswer = ; // guestyes or guestno
-var unhingedanswer = ; // unhingedyes or unhingedno
+var unhingedanswer = unhingedyes; // unhingedyes or unhingedno
 var mishapanswer = ; // mishapyes or mishapno
 
 var koianswer = koiyes; // koiyes or koino
