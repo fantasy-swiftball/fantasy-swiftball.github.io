@@ -15,10 +15,10 @@
 
 
 .calculate-open {
-    display: block;
+    display: none;
 }
 #calculate-closed {
-    display: none;
+    display: block;
 }
 
 
