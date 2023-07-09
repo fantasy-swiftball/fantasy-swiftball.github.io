@@ -9,8 +9,8 @@ var snanswer = cupcakegown; // pinkballgown or champagnegown or tissuegown or si
 var shirt22answer = ALGOATMshirt; // WANEGBTshirt or WTSAEshirt or ALGOATMshirt or new22shirt
 var folkloreanswer = greenfolklore; // purplefolklore or creamfolklore or pinkfolklore or greenfolklore or newfolkloredress
 var set1989answer = pink1989; // green1989 or orange1989 or pink1989 or new1989set
-var guitarspeechanswer = ; // speechguitaryes or speechguitarno
-var guitaralbumanswer = ; // guitar + album name
+var guitarspeechanswer = speechguitaryes; // speechguitaryes or speechguitarno
+var guitaralbumanswer = guitarsn; // guitar + album name
 var pianospeechanswer = ; // speechpianoyes or speechpianono
 var pianoalbumanswer = ; // piano + album name
 var midnightsanswer = ; // lightbluemidnights or pinkmidnights or purplemidnights or silversequinmidnights or combomidnights or newmidnightsdress 
@@ -27,5 +27,5 @@ var armlyricsanswer = ; // armlyricsyes or armlyricsno
 var additionalsnanswer = additionalsnyes; // additionalsnyes or additionalsnno
 var snvaulttrackanswer = ; // snvaulttrackyes or snvaulttrackno
 
-const guitaranswer = [];
+const guitaranswer = ['Last kiss', 'Last Kiss', 'last kiss'];
 const pianoanswer = [];
