@@ -15,16 +15,16 @@
 
 
 .calculate-open {
-    display: none;
+    display: block;
 }
 #calculate-closed {
-    display: block;
+    display: none;
 }
 
 
 .answers-open {
-    display: none;
+    display: block;
 }
 #answers-closed {
-    display: block;
+    display: none;
 }
