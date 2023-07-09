@@ -1,0 +1,30 @@
+.ballots-open {
+    display: none;
+}
+#ballots-closed {
+    display: block;
+}
+
+
+.updates-open {
+    display: none;
+}
+#updates-closed {
+    display: block;
+}
+
+
+.calculate-open {
+    display: block;
+}
+#calculate-closed {
+    display: none;
+}
+
+
+.answers-open {
+    display: none;
+}
+#answers-closed {
+    display: block;
+}

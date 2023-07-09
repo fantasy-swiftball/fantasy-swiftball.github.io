@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <title>Fantasy Swiftball</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="closed.css">
 </head>
 <body>
     <header>
@@ -32,6 +33,7 @@
             </div>
             <div class="content">
                 Fantasy Swiftball is an online game where you try to guess outfits that Taylor Swift wears every night of her Eras Tour, with surprise songs and other stuff like how long the cheer after 'champagne problems' is, if there is a surprise guest or not, etc. Each category has a specific amount of points assigned to it, each right guess will give you that amount of points that will add up to make 113 points total. The person with the highest amount of points will win prizes that are different each night, but the game is meant to be fun and silly, don't forget that!
+                <br>In this website, you will find the link to the latest ballots with the digital one, along with live updates whenever we get the answer to a category. And of course, there is a section for you to calculate your points by comparing your guesses to the actual answers, which you can find seperately.
                 <div class="attention">
                     * This website isn't as optimized for desktop as it is for mobile, I suggest using your mobile device in portrait mode. If you're on desktop and have recommendations, leave them to me on Twitter (<a class="redirect" href="https://twitter.com/Gthlopsdki?t=FZy9nNFb7zk8wAEUSJON3A&s=09">@Gthlopsdki</a>)
                 <br>* I don't recommend using this website in split-screen view.
@@ -44,6 +46,7 @@ Website is made by - InShOt (<a class="redirect" href="https://twitter.com/Gthlo
         </div>
     </section>
     <section id="ballots">
+        <div class="ballots-open">
         <div class="par">
             <div class="title">
                 LATEST BALLOTS
@@ -61,8 +64,18 @@ Website is made by - InShOt (<a class="redirect" href="https://twitter.com/Gthlo
                 <div class="download-image"><a href="ballot.jpg" download>Download.</a></div>
             </div>
         </div>
+        </div>
+        <div class="par" id="ballots-closed">
+            <div class="title">
+                LATEST BALLOTS
+            </div>
+            <div class="content">
+                Ballots are currently closed. Ballots close when the countdown clock appears on the big screen at the Eras Tour. Ballots will be up soon, before the next show. Stay tuned at <a href="https://twitter.com/reckedmaserati?t=v0y0w89LDOY2vPm6oMvGAA&s=09" class="redirect">@reckedmaserati</a> on Twitter for updates. Thank you for your patience.
+            </div>
+        </div>
     </section>
     <section id="updates">
+        <div class="updates-open">
         <div class="par">
             <div class="title title-update">
                 <div class="video-ani"><video src="red light animation.mp4" autoplay muted loop></video></div>
@@ -80,37 +93,67 @@ Website is made by - InShOt (<a class="redirect" href="https://twitter.com/Gthlo
                 Tonight's Fearless dress!
             </div>
         </div>
+        </div>
+        <div class="par" id="updates-closed">
+            <div class="title">
+                LIVE UPDATES
+            </div>
+            <div class="content">
+                There are currently no live updates. That means Taylor isn't currently on stage. Come back when the next show starts, I'll start updating as soon as possible. Make sure to refresh your page often to receive newer updates.
+            </div>
+        </div>
     </section>
     <section id="calculate">
+        <div class="calculate-open">
         <div class="par">
             <div class="title">
                 CALCULATE YOUR RESULTS
             </div>
             <div class="content">
-                How this works is that you will enter what you guessed on Swiftball and my code will compare your guesses with the correct ones, and next to each category you will see “correct :)” or "incorrect :(”, and at the bottom of each category you will either see that you got full points or no points at all. At the end there will be a “Total” category with the sum of all your points, but you have to click “Submit” first.
+                How this works is that you will enter what you guessed on Swiftball and my code will compare your guesses with the correct ones, and next to each category you will see “:)” or “:(”, and at the bottom of each category you will either see that you got full points or no points at all. At the end there will be a “Total” category with the sum of all your points, but you have to click “Submit” first.
                 <div class="attention">
                     * This section of the website is closed as long as Taylor is on stage, I will try to get it back as soon as possible to check your answers for the latest show. There is currently no way of checking your answers for previous shows, if you would like that, message me on Twitter (<a href ="https://twitter.com/Gthlopsdki?s=09" class="redirect">@Gthlopsdki</a>) and I would work on it.
 <br>* Please fill every category before you click “Submit” to prevent errors.
 <br>* Please read carefully what I have to say before surprise songs as you can possibly not receive points even if my code is right.
-<br>* The actual correct answer doesn't turn green currently, check the “LATEST ANSWERS” section.
+<br>* The actually correct answer will turn green, you can also check the “LATEST ANSWERS” category.
 <br>* I do not collect your data, this is for you and you only. I don't have access to it and it's not being sent to Swiftball. (I don't have either your e-mail or username)
                 </div>
             </div>
         </div>
-        <form>
+        <div class="par">
+            <div class="title image-switch">
+                <span>IMAGES</span>
+               <div class="on-off">
+                   <div id="on-btn" class="on-checked">
+                       <p>SHOW</p>
+                   </div>
+                   <div id="off-btn" class="off-not-checked">
+                       <p>HIDE</p>
+                   </div>
+                </div>
+            </div>
+        </div>
+        <form onSubmit="calculatepoints();return false">
         <div class="par">
             <div class="title">
                 LOVER BODYSUIT
-                <span id="lover-correct" class="correct"> correct :)</span>
-                <span class="incorrect" id="lover-incorrect">incorrect :(</span>
+                <span id="lover-correct" class="correct"> :)</span>
+                <span class="incorrect" id="lover-incorrect"> :(</span>
             </div>
             <div class="content">
                     <label>
+                        <div class="radio-img">
+                            <img src="Pink and blue.jpg">
+                        </div>
                         <input type="radio" name="lover-bodysuit" value="Pink and blue" required id="pink-and-blue"> Pink and blue</label>
-                    <label><br><input type="radio" name="lover-bodysuit" value="Blue and gold" id="blue-and-gold"> Blue and gold
+                    <label><br><div class="radio-img">
+                            <img src="Blue and gold.jpg">
+                        </div><input type="radio" name="lover-bodysuit" value="Blue and gold" id="blue-and-gold"> Blue and gold
                     </label>
                     <label>
-                        <br><input type="radio" name="lover-bodysuit" value="Purple with tassels" id="purple-with-tassels"> Purple with tassels
+                        <br><div class="radio-img">
+                            <img src="Purple with tassels.jpg">
+                        </div><input type="radio" name="lover-bodysuit" value="Purple with tassels" id="purple-with-tassels"> Purple with tassels
                     </label>
                     <label>
                         <br><input type="radio" name="lover-bodysuit" value="New bodysuit" id="new-lover-bodysuit"> New bodysuit
@@ -134,15 +177,19 @@ Website is made by - InShOt (<a class="redirect" href="https://twitter.com/Gthlo
         <div class="par">
             <div class="title">
                THE MAN JACKET
-               <span id="the-man-correct" class="correct"> correct :)</span>
-                <span class="incorrect" id="the-man-incorrect">incorrect :(</span>
+               <span id="the-man-correct" class="correct"> :)</span>
+                <span class="incorrect" id="the-man-incorrect"> :(</span>
             </div>
             <div class="content">
                 <label>
-                    <input type="radio" name="the-man-jacket" value="black" id="black-the-man-jacket" required> Black
+                    <div class="radio-img">
+                            <img src="Black the man.jpg">
+                        </div><input type="radio" name="the-man-jacket" value="black" id="black-the-man-jacket" required> Black
                 </label>
                 <br><label>
-                    <input type="radio" name="the-man-jacket" id="silver-the-man-jacket" value="silver"> Silver
+                    <div class="radio-img">
+                            <img src="Silver the man.jpg">
+                        </div><input type="radio" name="the-man-jacket" id="silver-the-man-jacket" value="silver"> Silver
                 </label>
                 <br><label>
                     <input type="radio" name="the-man-jacket" id="new-the-man-jacket" value="new jacket"> New jacket
@@ -166,15 +213,19 @@ Website is made by - InShOt (<a class="redirect" href="https://twitter.com/Gthlo
         <div class="par">
             <div class="title">
                 THE LOVER GUITAR
-                <span id="lover-guitar-correct" class="correct"> correct :)</span>
-                <span class="incorrect" id="lover-guitar-incorrect">incorrect :(</span>
+                <span id="lover-guitar-correct" class="correct"> :)</span>
+                <span class="incorrect" id="lover-guitar-incorrect"> :(</span>
             </div>
             <div class="content">
                 <label>
-                    <input type="radio" name="lover-guitar" value="Pink" id="pink-lover-guitar" required> Pink
+                    <div class="radio-img">
+                            <img src="Pink lover guitar.jpg">
+                        </div><input type="radio" name="lover-guitar" value="Pink" id="pink-lover-guitar" required> Pink
                 </label>
                 <br><label>
-                    <input type="radio" name="lover-guitar" value="Blue" id="blue-lover-guitar"> Blue
+                    <div class="radio-img"><span class="helper"></span>
+                            <img src="Blue lover guitar.jpg">
+                        </div><input type="radio" name="lover-guitar" value="Blue" id="blue-lover-guitar"> Blue
                 </label>
                 <div class="points-worth">
                     <span class="points">
@@ -195,18 +246,24 @@ Website is made by - InShOt (<a class="redirect" href="https://twitter.com/Gthlo
         <div class="par">
             <div class="title">
                 FEARLESS DRESS
-                <span id="fearless-dress-correct" class="correct"> correct :)</span>
-                <span class="incorrect" id="fearless-dress-incorrect">incorrect :(</span>
+                <span id="fearless-dress-correct" class="correct"> :)</span>
+                <span class="incorrect" id="fearless-dress-incorrect"> :(</span>
             </div>
             <div class="content">
                 <label>
-                    <input type="radio" name="fearless-dress" value="Fringe dress" required id="fringe-dress"> Fringe dress (“Gluten-Free”)
+                    <div class="radio-img">
+                            <img src="Fringe dress.jpg">
+                        </div><input type="radio" name="fearless-dress" value="Fringe dress" required id="fringe-dress"> Fringe dress (“Gluten-Free”)
                 </label>
                 <br><label>
-                    <input type="radio" name="fearless-dress" value="Gold noodle" id="gold-noodle"> Gold noodle
+                    <div class="radio-img">
+                            <img src="Gold noodle.jpg">
+                        </div><input type="radio" name="fearless-dress" value="Gold noodle" id="gold-noodle"> Gold noodle
                 </label>
                 <br><label>
-                    <input type="radio" name="fearless-dress" value="Silver noodle" id="silver-noodle"> Silver noodle
+                    <div class="radio-img">
+                            <img src="Silver noodle.jpg">
+                        </div><input type="radio" name="fearless-dress" value="Silver noodle" id="silver-noodle"> Silver noodle
                 </label>
                 <br><label>
                     <input type="radio" name="fearless-dress" value="New dress" id="new-fearless-dress"> New dress
@@ -230,19 +287,23 @@ Website is made by - InShOt (<a class="redirect" href="https://twitter.com/Gthlo
         <div class="par">
             <div class="title">
                 EVERMORE DRESS
-                <span id="evermore-dress-correct" class="correct"> correct :)</span>
-                <span class="incorrect" id="evermore-dress-incorrect">incorrect :(</span>
+                <span id="evermore-dress-correct" class="correct"> :)</span>
+                <span class="incorrect" id="evermore-dress-incorrect"> :(</span>
             </div>
             <div class="content">
                 <label>
-                    <input type="radio" name="evermore-dress" value="Orange with flowers" required id="orange-with-flowers"> Orange with flowers
+                    <div class="radio-img">
+                            <img src="Orange with flowers.jpg">
+                        </div><input type="radio" name="evermore-dress" value="Orange with flowers" required id="orange-with-flowers"> Orange with flowers
                 </label>
                 <br><label>
-                    <input type="radio" name="evermore-dress" value="Bronze" id="bronze-evermore"> Bronze
+                    <div class="radio-img">
+                            <img src="Bronze evermore.jpg">
+                        </div><input type="radio" name="evermore-dress" value="Bronze" id="bronze-evermore"> Bronze
                 </label>
                 <br><label>
                     <input type="radio" name="evermore-dress" value="New dress" id="new-evermore-dress"> New dress
-                </label>
+                </label><br>
                 <div class="points-worth">
                     <span class="points">
                         Points :
@@ -262,8 +323,8 @@ Website is made by - InShOt (<a class="redirect" href="https://twitter.com/Gthlo
         <div class="par">
             <div class="title">
                 CHAMPAGNE PROBLEMS CHEER
-                <span id="cp-cheer-correct" class="correct"> correct :)</span>
-                <span id="cp-cheer-incorrect" class="incorrect">incorrect :(</span>
+                <span id="cp-cheer-correct" class="correct"> :)</span>
+                <span id="cp-cheer-incorrect" class="incorrect"> :(</span>
             </div>
             <div class="content">
                 <label>
@@ -300,11 +361,14 @@ Website is made by - InShOt (<a class="redirect" href="https://twitter.com/Gthlo
         <div class="par">
             <div class="title">
                 REPUTATION JUMPSUIT
-                <span id="rep-jumpsuit-correct" class="correct"> correct :)</span>
-                <span id="rep-jumpsuit-incorrect" class="incorrect">incorrect :(</span>
+                <span id="rep-jumpsuit-correct" class="correct"> :)</span>
+                <span id="rep-jumpsuit-incorrect" class="incorrect"> :(</span>
             </div>
             <div class="content">
                 <label>
+                    <div class="radio-img">
+                            <img src="Black and red snake.jpg">
+                        </div>
                     <input type="radio" name="rep-jumpsuit" value="Black and red snake jumpsuit" required id="blackandredsnake"> Black and red snake jumpsuit
                 </label>
                 <br><label>
@@ -329,21 +393,39 @@ Website is made by - InShOt (<a class="redirect" href="https://twitter.com/Gthlo
         <div class="par">
             <div class="title">
                 SPEAK NOW DRESS
-                <span id="sn-correct" class="correct"> correct :)</span>
-                <span id="sn-incorrect" class="incorrect">incorrect :(</span>
+                <span id="sn-correct" class="correct"> :)</span>
+                <span id="sn-incorrect" class="incorrect"> :(</span>
             </div>
             <div class="content">
                 <label>
+                    <div class="radio-img">
+                            <img src="Pink ball gown.jpg">
+                        </div>
                     <input type="radio" name="sn-dress" value="Pink ball gown" required id="pinkballgown"> Pink ball gown
                 </label>
                 <br><label>
+                    <div class="radio-img">
+                            <img src="Champagne gown.jpg">
+                        </div>
                     <input type="radio" name="sn-dress" value="Champagne “everything bagel” gown" id="champagnegown"> Champagne “everything bagel” gown
                 </label>
                 <br><label>
+                    <div class="radio-img">
+                            <img src="Tissue gown.jpg">
+                        </div>
                     <input type="radio" name="sn-dress" value="Tissue flower gown" id="tissuegown"> Tissue flower gown
                 </label>
                 <br><label>
+                    <div class="radio-img">
+                            <img src="Silver gown.jpg">
+                        </div>
                     <input type="radio" name="sn-dress" value="Silver gown" id="silvergown"> Silver gown
+                </label>
+                <br><label>
+                    <div class="radio-img">
+                        <img src="Cupcake Wrapper Dress.jpg">
+                    </div>
+                    <input type="radio" name="sn-dress" value="Cupcake wrapper gown" id="cupcakegown"> Cupcake wrapper gown
                 </label>
                 <br><label>
                     <input type="radio" name="sn-dress" value="New gown" id="newsngown"> New gown
@@ -367,17 +449,26 @@ Website is made by - InShOt (<a class="redirect" href="https://twitter.com/Gthlo
         <div class="par">
             <div class="title">
                 22 SHIRT
-                <span id="22-shirt-correct" class="correct"> correct :)</span>
-                <span id="22-shirt-incorrect" class="incorrect">incorrect :(</span>
+                <span id="22-shirt-correct" class="correct"> :)</span>
+                <span id="22-shirt-incorrect" class="incorrect"> :(</span>
             </div>
             <div class="content">
                 <label>
+                    <div class="radio-img">
+                            <img src="WANEGBT shirt.jpg">
+                        </div>
                     <input type="radio" name="22-shirt" value="We Are Never Ever Getting Back Together" required id="WANEGBTshirt"> We Are Never Ever Getting Back Together
                 </label>
                 <br><label>
+                    <div class="radio-img">
+                            <img src="WTSAE shirt.jpg">
+                        </div>
                     <input type="radio" name="22-shirt" value="Who’s Taylor Swift Anyway? Ew." id="WTSAEshirt"> Who’s Taylor Swift Anyway? Ew.
                 </label>
                 <br><label>
+                    <div class="radio-img">
+                            <img src="ALGOATM shirt.jpg">
+                        </div>
                     <input type="radio" name="22-shirt" value="A Lot Going On At The Moment" id="ALGOATMshirt"> A Lot Going On At The Moment
                 </label>
                 <br><label>
@@ -402,20 +493,32 @@ Website is made by - InShOt (<a class="redirect" href="https://twitter.com/Gthlo
         <div class="par">
             <div class="title">
                 FOLKLORE DRESS
-                <span id="folklore-dress-correct" class="correct"> correct :)</span>
-                <span class="incorrect" id="folklore-dress-incorrect">incorrect :(</span>
+                <span id="folklore-dress-correct" class="correct"> :)</span>
+                <span class="incorrect" id="folklore-dress-incorrect"> :(</span>
             </div>
             <div class="content">
                 <label>
+                    <div class="radio-img">
+                            <img src="Purple folklore.jpg">
+                        </div>
                     <input type="radio" name="folklore-dress" value="Purple dress" required id="purplefolklore"> Purple dress
                 </label>
                 <br><label>
+                    <div class="radio-img">
+                            <img src="Cream folklore.jpg">
+                        </div>
                     <input type="radio" name="folklore-dress" value="Cream dress" id="creamfolklore"> Cream dress
                 </label>
                 <br><label>
+                    <div class="radio-img">
+                            <img src="Pink folklore.jpg">
+                        </div>
                     <input type="radio" name="folklore-dress" value="Pink lace dress" id="pinkfolklore"> Pink lace dress
                 </label>
                 <br><label>
+                    <div class="radio-img">
+                            <img src="Green folklore.jpg">
+                        </div>
                     <input type="radio" name="folklore-dress" value="Green dress" id="greenfolklore"> Green dress
                 </label>
                 <br><label>
@@ -440,17 +543,26 @@ Website is made by - InShOt (<a class="redirect" href="https://twitter.com/Gthlo
         <div class="par">
             <div class="title">
                 1989 SET
-                <span id="1989-set-correct" class="correct"> correct :)</span>
-                <span id="1989-set-incorrect" class="incorrect">incorrect :(</span>
+                <span id="1989-set-correct" class="correct"> :)</span>
+                <span id="1989-set-incorrect" class="incorrect"> :(</span>
             </div>
             <div class="content">
                 <label>
+                    <div class="radio-img">
+                            <img src="Green 1989.jpg">
+                        </div>
                     <input type="radio" name="1989-set" value="Green set" required id="green1989"> Green set
                 </label>
                 <br><label>
+                    <div class="radio-img">
+                            <img src="Orange 1989.jpg">
+                        </div>
                     <input type="radio" name="1989-set" value="Orange set" id="orange1989"> Orange set
                 </label>
                 <br><label>
+                    <div class="radio-img">
+                            <img src="Pink 1989.jpg">
+                        </div>
                     <input type="radio" name="1989-set" value="Pink set" id="pink1989"> Pink set
                 </label>
                 <br><label>
@@ -463,10 +575,10 @@ Website is made by - InShOt (<a class="redirect" href="https://twitter.com/Gthlo
                     <span class="value">
                         /5
                     </span>
-                    <class id="1989-wrong" class="value-wrong">
+                    <span id="1989-wrong" class="value-wrong">
                         0
                     </span>
-                    <span id="1989-right" class="value-right">
+                    <span id="right-1989" class="value-right">
                         5
                     </span>
                 </div>
@@ -475,8 +587,8 @@ Website is made by - InShOt (<a class="redirect" href="https://twitter.com/Gthlo
         <div class="par">
             <div class="title">
                 WILL THERE BE A SPEECH BEFORE THE GUITAR SONG?
-                <span id="speech-guitar-correct" class="correct"> correct :)</span>
-                <span id="speech-guitar-incorrect" class="incorrect">incorrect :(</span>
+                <span id="speech-guitar-correct" class="correct"> :)</span>
+                <span id="speech-guitar-incorrect" class="incorrect"> :(</span>
             </div>
             <div class="content">
                 <label>
@@ -504,8 +616,8 @@ Website is made by - InShOt (<a class="redirect" href="https://twitter.com/Gthlo
         <div class="par">
             <div class="title">
                 GUITAR ACOUSTIC ALBUM
-                <span id="guitar-album-correct" class="correct"> correct :)</span>
-                <span id="guitar-album-incorrect" class="incorrect">incorrect :(</span>
+                <span id="guitar-album-correct" class="correct"> :)</span>
+                <span id="guitar-album-incorrect" class="incorrect"> :(</span>
             </div>
             <div class="content">
                 <label>
@@ -560,14 +672,14 @@ Website is made by - InShOt (<a class="redirect" href="https://twitter.com/Gthlo
         <div class="par">
             <div class="title">
                 GUITAR SURPRISE SONG
-                <span id="guitar-song-correct" class="correct"> correct :)</span>
-                <span class="incorrect" id="guitar-song-incorrect">incorrect :(</span>
-                <span class="other-acoustic" id="guitar-is-piano">guess is piano acoustic</span>
+                <span id="guitar-song-correct" class="correct"> :)</span>
+                <span class="incorrect" id="guitar-song-incorrect"> :(</span>
+                <span class="other-acoustic" id="guitar-is-piano">∞</span>
             </div>
             <div class="content">
                 <div class="attention">
                     * Don't swap your guitar and piano surprise song guesses, enter them here as you entered them in Swiftball.
-<br>* If your guitar song guess below turned out to be the piano surprise song, you will still receive 6.5 points and the message near the category would say “guess is piano acoustic” instead of “correct :)” and “incorrect :(”
+<br>* If your guitar song guess below turned out to be the piano surprise song, you will still receive 6.5 points and the message near the category would show “∞” instead of “:)” and “:(”
 <br>* The use of acronyms is accepted here. However, it is not accepted in the actual Swiftball. Every letter of the acronym has to be capital, e.g. IOMWIWY.
 <br>* Don't include ‘(Taylor's Version)’, ‘(From The Vault)’ or features, but do include special characters (not in acronyms), eg. ‘Mr. Perfectly Fine’, ‘...ready for it?’, ‘RFI’ (acronym for ‘...ready for it?’)
 <br>* My code is case sensitive, I'll make sure it accepts guesses where the first letter of each word is capital, no letters are capital and only the first letter of the song is capital. Include apostrophes, if the song starts with ‘the’ like ‘The Other Side Of The Door’ please include it. 
@@ -577,7 +689,8 @@ Website is made by - InShOt (<a class="redirect" href="https://twitter.com/Gthlo
 <br> If your guess is right for either one of the surprise songs and it meets these criteria and you didn't receive your points, let me know on Twitter (<a href ="https://twitter.com/Gthlopsdki?s=09" class="redirect">@Gthlopsdki</a>)
                 </div>
                 <label>
-                    <input type="text" value="" required id="guitar-song-guess">
+                    <input type="text" required id="guitar-song-guess">
+                    
                 </label>
                 <div class="points-worth">
                     <span class="points">
@@ -598,8 +711,8 @@ Website is made by - InShOt (<a class="redirect" href="https://twitter.com/Gthlo
         <div class="par">
             <div class="title">
                 WILL THERE BE A SPEECH BEFORE THE PIANO SONG?
-                <span class="correct" id="speech-piano-correct"> correct :)</span>
-                <span class="incorrect" id="speech-piano-incorrect">incorrect :(</span>
+                <span class="correct" id="speech-piano-correct"> :)</span>
+                <span class="incorrect" id="speech-piano-incorrect"> :(</span>
             </div>
             <div class="content">
                 <label>
@@ -627,8 +740,8 @@ Website is made by - InShOt (<a class="redirect" href="https://twitter.com/Gthlo
         <div class="par">
             <div class="title">
                 PIANO ACOUSTIC ALBUM
-                <span id="piano-album-correct" class="correct"> correct :)</span>
-                <span id="piano-album-incorrect" class="incorrect">incorrect :(</span>
+                <span id="piano-album-correct" class="correct"> :)</span>
+                <span id="piano-album-incorrect" class="incorrect"> :(</span>
             </div>
             <div class="content">
                 <label>
@@ -679,18 +792,18 @@ Website is made by - InShOt (<a class="redirect" href="https://twitter.com/Gthlo
                     </span>
                 </div>
             </div>
-        </div></div>
+        </div>
         <div class="par">
             <div class="title">
                 PIANO SURPRISE SONG
-                <span id="piano-song-correct" class="correct"> correct :)</span>
-                <span id="piano-song-incorrect" class="incorrect">incorrect :(</span>
-                <span id="piano-is-guitar" class="other-acoustic"> guess is guitar acoustic</span>
+                <span id="piano-song-correct" class="correct"> :)</span>
+                <span id="piano-song-incorrect" class="incorrect"> :(</span>
+                <span id="piano-is-guitar" class="other-acoustic">∞</span>
             </div>
             <div class="content">
                 <div class="attention">
                     * Don't swap your guitar and piano surprise song guesses, enter them here as you entered them in Swiftball.
-<br>* If your piano song guess below turned out to be the guitar surprise song, you will still receive 7 points and the message near the category would say “guess is guitar acoustic” instead of “correct :)” and “incorrect :(”
+<br>* If your piano song guess below turned out to be the guitar surprise song, you will still receive 7 points and the message near the category would show “∞” instead of “:)” and “:(”
 <br>* The use of acronyms is accepted here. However, it is not accepted in the actual Swiftball. Every letter of the acronym has to be capital, e.g. IOMWIWY.
 <br>* Don't include ‘(Taylor's Version)’, ‘(From The Vault)’ or features, but do include special characters (not in acronyms), eg. ‘Mr. Perfectly Fine’, ‘...ready for it?’, ‘RFI’ (acronym for ‘...ready for it?’)
 <br>* My code is case sensitive, I'll make sure it accepts guesses where the first letter of each word is capital, no letters are capital and only the first letter of the song is capital. Include apostrophes, if the song starts with ‘the’ like ‘The Other Side Of The Door’ please include it. 
@@ -721,23 +834,38 @@ Website is made by - InShOt (<a class="redirect" href="https://twitter.com/Gthlo
         <div class="par">
             <div class="title">
                 MIDNIGHTS T-SHIRT DRESS
-                <span id="midnights-dress-correct" class="correct"> correct :)</span>
-                <span id="midnights-dress-incorrect" class="incorrect">incorrect :(</span>
+                <span id="midnights-dress-correct" class="correct"> :)</span>
+                <span id="midnights-dress-incorrect" class="incorrect"> :(</span>
             </div>
             <div class="content">
                 <label>
+                    <div class="radio-img">
+                            <img src="Light blue midnights.jpg">
+                        </div>
                     <input type="radio" name="midnights-dress" value="Light blue" required id="lightbluemidnights"> Light blue
                 </label>
                 <br><label>
+                    <div class="radio-img">
+                            <img src="Pink midnights.jpg">
+                        </div>
                     <input type="radio" name="midnights-dress" value="Pink" id="pinkmidnights"> Pink
                 </label>
                 <br><label>
+                    <div class="radio-img">
+                            <img src="Purple midnights.jpg">
+                        </div>
                     <input type="radio" name="midnights-dress" value="Purple" id="purplemidnights"> Purple
                 </label>
                 <br><label>
+                    <div class="radio-img">
+                            <img src="Silver sequin midnights.jpg">
+                        </div>
                     <input type="radio" name="midnights-dress" value="Silver sequin" id="silversequinmidnights"> Silver sequin
                 </label>
                 <br><label>
+                    <div class="radio-img">
+                            <img src="Combo midnights.jpg">
+                        </div>
                     <input type="radio" name="midnights-dress" value="The elusive exclusive super confusing blue/purple/pink combo" id="combomidnights"> The elusive exclusive super confusing blue/purple/pink combo         
                 </label>
                 <br><label>
@@ -762,18 +890,24 @@ Website is made by - InShOt (<a class="redirect" href="https://twitter.com/Gthlo
         <div class="par">
             <div class="title">
                 MIDNIGHT RAIN BODYSUIT
-                <span id="mr-bodysuit-correct" class="correct"> correct :)</span>
-                <span id="mr-bodysuit-incorrect" class="incorrect">incorrect :(</span>
+                <span id="mr-bodysuit-correct" class="correct"> :)</span>
+                <span id="mr-bodysuit-incorrect" class="incorrect"> :(</span>
             </div>
             <div class="content">
                 <label>
-                    <input type="radio" name="mr-bodysuit" value="Navy / Starburst Patterned Oscar de la Renta" required> Navy / Starburst Patterned Oscar de la Renta
+                    <div class="radio-img">
+                            <img src="Mr navy.jpg">
+                        </div>
+                    <input type="radio" name="mr-bodysuit" value="Navy / Starburst Patterned Oscar de la Renta" required id="mrnavy"> Navy / Starburst Patterned Oscar de la Renta
                 </label>
                 <br><label>
-                    <input type="radio" name="mr-bodysuit" value="“Blurple” / Scallop Patterned Zuhair Murad"> “Blurple” / Scallop Patterned Zuhair Murad
+                    <div class="radio-img">
+                            <img src="Mr blurple.jpg">
+                        </div>
+                    <input type="radio" name="mr-bodysuit" value="“Blurple” / Scallop Patterned Zuhair Murad" id="mrblurple"> “Blurple” / Scallop Patterned Zuhair Murad
                 </label>
                 <br><label>
-                    <input type="radio" name="mr-bodysuit" value="New bodysuit"> New bodysuit
+                    <input type="radio" name="mr-bodysuit" value="New bodysuit" id="mrnewbodysuit"> New bodysuit
                 </label>
                 <div class="points-worth">
                     <span class="points">
@@ -794,24 +928,33 @@ Website is made by - InShOt (<a class="redirect" href="https://twitter.com/Gthlo
         <div class="par">
             <div class="title">
                 KARMA JACKET
-                <span id="karma-jacket-correct" class="correct"> correct :)</span>
-                <span id="karma-jacket-incorrect" class="incorrect">incorrect :(</span>
+                <span id="karma-jacket-correct" class="correct"> :)</span>
+                <span id="karma-jacket-incorrect" class="incorrect"> :(</span>
             </div>
             <div class="content">
                 <label>
-                    <input type="radio" name="karma-jacket" value="Light pink" required> Light pink
+                    <div class="radio-img">
+                            <img src="Light pink karma.jpg">
+                        </div>
+                    <input type="radio" name="karma-jacket" value="Light pink" required id="karmalightpink"> Light pink
                 </label>
                 <br><label>
-                    <input type="radio" name="karma-jacket" value="Multicolor"> Multicolor
+                    <div class="radio-img">
+                            <img src="Multicolor karma.jpg">
+                        </div>
+                    <input type="radio" name="karma-jacket" value="Multicolor" id="karmamulticolor"> Multicolor
                 </label>
                 <br><label>
-                    <input type="radio" name="karma-jacket" value="Magenta / Red"> Magenta / Red
+                    <div class="radio-img">
+                            <img src="Magenta karma.jpg">
+                        </div>
+                    <input type="radio" name="karma-jacket" value="Magenta / Red" id="karmamagenta"> Magenta / Red
                 </label>
                 <br><label>
-                    <input type="radio" name="karma-jacket" value="No jacket"> No jacket
+                    <input type="radio" name="karma-jacket" value="No jacket" id="nokarmajacket"> No jacket
                 </label>
                 <br><label>
-                    <input type="radio" name="karma-jacket" value="New jacket"> New jacket
+                    <input type="radio" name="karma-jacket" value="New jacket" id="newkarmajacket"> New jacket
                 </label>
                 <div class="points-worth">
                     <span class="points">
@@ -832,15 +975,15 @@ Website is made by - InShOt (<a class="redirect" href="https://twitter.com/Gthlo
         <div class="par">
             <div class="title">
                 WILL THERE BE A SPECIAL GUEST?
-                <span id="guest-correct" class="correct"> correct :)</span>
-                <span id="guest-incorrect" class="incorrect">incorrect :(</span>
+                <span id="guest-correct" class="correct"> :)</span>
+                <span id="guest-incorrect" class="incorrect"> :(</span>
             </div>
             <div class="content">
                 <label>
-                    <input type="radio" name="special-guest" value="Yes" required> Yes
+                    <input type="radio" name="special-guest" value="Yes" required id="guestyes"> Yes
                 </label>
                 <br><label>
-                    <input type="radio" name="special-guest" value="No"> No
+                    <input type="radio" name="special-guest" value="No" id="guestno"> No
                 </label>
                 <div class="points-worth">
                     <span class="points">
@@ -861,15 +1004,15 @@ Website is made by - InShOt (<a class="redirect" href="https://twitter.com/Gthlo
         <div class="par">
             <div class="title">
                 WILL SOMETHING UNHINGED HAPPEN (Announcement / Premiere / Vault Scramble / etc)
-                <span id="unhinged-correct" class="correct"> correct :)</span>
-                <span id="unhinged-incorrect" class="incorrect">incorrect :(</span>
+                <span id="unhinged-correct" class="correct"> :)</span>
+                <span id="unhinged-incorrect" class="incorrect"> :(</span>
             </div>
             <div class="content">
                 <label>
-                    <input type="radio" name="unhinged" value="Yes" required> Yes
+                    <input type="radio" name="unhinged" value="Yes" required id="unhingedyes"> Yes
                 </label>
                 <br><label>
-                    <input type="radio" name="unhinged" value="No"> No
+                    <input type="radio" name="unhinged" value="No" id="unhingedno"> No
                 </label>
                 <div class="points-worth">
                     <span class="points">
@@ -890,15 +1033,15 @@ Website is made by - InShOt (<a class="redirect" href="https://twitter.com/Gthlo
         <div class="par">
             <div class="title">
                 WILL THERE BE SOME SORT OF LARGE MISHAP (Bad Blood Security Guard / Broken Piano / 22 Hat Girl Climbing Onstage)
-                <span class="correct" id="mishap-correct"> correct :)</span>
-                <span class="incorrect" id="mishap-incorrect">incorrect :(</span>
+                <span class="correct" id="mishap-correct"> :)</span>
+                <span class="incorrect" id="mishap-incorrect"> :(</span>
             </div>
             <div class="content">
                 <label>
-                    <input type="radio" name="large-mishap" value="Yes" required> Yes
+                    <input type="radio" name="large-mishap" value="Yes" required id="mishapyes"> Yes
                 </label>
                 <br><label>
-                    <input type="radio" name="large-mishap" value="No"> No
+                    <input type="radio" name="large-mishap" value="No" id="mishapno"> No
                 </label>
                 <div class="points-worth">
                     <span class="points">
@@ -918,6 +1061,192 @@ Website is made by - InShOt (<a class="redirect" href="https://twitter.com/Gthlo
         </div>
         <div class="par">
             <div class="title">
+                WILL THE KOI GUITAR MAKE AN APPEARANCE?
+                <span class="correct" id="koicorr"> :)</span>
+                <span class="incorrect" id="koiincorr"> :(</span>
+            </div>
+            <div class="content">
+                <div class="additional-img">
+                    <img src="Koi fish guitar.jpg">
+                </div>
+                <label>
+                    <input type="radio" name="koi-guitar" value="Yes" id="koiyes" required> Yes
+                </label>
+                <br><label>
+                    <input type="radio" name="koi-guitar" value="No" id="koino"> No
+                </label>
+                <div class="points-worth">
+                    <span class="points">
+                        Points : 
+                    </span>
+                    <span class="value">
+                        /13
+                    </span>
+                    <span id="koiwrong" class="value-wrong">
+                        0
+                    </span>
+                    <span id="koiright" class="value-right">
+                        13
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="par">
+            <div class="title">
+                WILL THE MEAN BANJO MAKE AN APPEARANCE?
+                <span class="correct" id="banjocorr"> :)</span>
+                <span class="incorrect" id="banjoincorr"> :(</span>
+            </div>
+            <div class="content">
+                <div class="additional-img">
+                    <img src="Mean banjo.png">
+                </div>
+                <label>
+                    <input type="radio" name="mean-banjo" value="Yes" id="banjoyes" required> Yes
+                </label>
+                <br><label>
+                    <input type="radio" name="mean-banjo" value="No" id="banjono"> No
+                </label>
+                <div class="points-worth">
+                    <span class="points">
+                        Points : 
+                    </span>
+                    <span class="value">
+                        /13
+                    </span>
+                    <span id="banjowrong" class="value-wrong">
+                        0
+                    </span>
+                    <span id="banjoright" class="value-right">
+                        13
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="par">
+            <div class="title">
+                WILL SHE WRITE A 13 ON HER HAND?
+                <span class="correct" id="hand13corr"> :)</span>
+                <span class="incorrect" id="hand13incorr"> :(</span>
+            </div>
+            <div class="content">
+                <div class="additional-img">
+                    <img src="13 on her hand.jpg">
+                </div>
+                <label>
+                    <input type="radio" name="hand-13" value="Yes" id="hand13yes" required> Yes
+                </label>
+                <br><label>
+                    <input type="radio" name="hand-13" value="No" id="hand13no"> No
+                </label>
+                <div class="points-worth">
+                    <span class="points">
+                        Points : 
+                    </span>
+                    <span class="value">
+                        /4
+                    </span>
+                    <span id="hand13wrong" class="value-wrong">
+                        0
+                    </span>
+                    <span id="hand13right" class="value-right">
+                        4
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="par">
+            <div class="title">
+                WILL SHE HAVE LYRICS ON HER ARM?
+                <span class="correct" id="armlyricscorr"> :)</span>
+                <span class="incorrect" id="armlyricsincorr"> :(</span>
+            </div>
+            <div class="content">
+                <div class="additional-img">
+                    <img src="Lyrics on her arm.jpg">
+                </div>
+                <label>
+                    <input type="radio" name="arm-lyrics" value="Yes" id="armlyricsyes" required> Yes
+                </label>
+                <br><label>
+                    <input type="radio" name="arm-lyrics" value="No" id="armlyricsno"> No
+                </label>
+                <div class="points-worth">
+                    <span class="points">
+                        Points : 
+                    </span>
+                    <span class="value">
+                        /5
+                    </span>
+                    <span id="armlyricswrong" class="value-wrong">
+                        0
+                    </span>
+                    <span id="armlyricsright" class="value-right">
+                        5
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="par">
+            <div class="title">
+                WILL THERE BE ADDITIONAL SPEAK NOW SONGS ADDED TO THE SET LIST?
+                <span class="correct" id="additionalsncorr"> :)</span>
+                <span class="incorrect" id="additionalsnincorr"> :(</span>
+            </div>
+            <div class="content">
+                <label>
+                    <input type="radio" name="additional-sn-songs" value="Yes" id="additionalsnyes" required> Yes
+                </label>
+                <br><label>
+                    <input type="radio" name="additional-sn-songs" value="No" id="additionalsnno"> No
+                </label>
+                <div class="points-worth">
+                    <span class="points">
+                        Points : 
+                    </span>
+                    <span class="value">
+                        /5
+                    </span>
+                    <span id="additionalsnwrong" class="value-wrong">
+                        0
+                    </span>
+                    <span id="additionalsnright" class="value-right">
+                        5
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="par">
+            <div class="title">
+                WILL SHE SING A SPEAK NOW VAULT TRACK?
+                <span class="correct" id="snvaulttrackcorr"> :)</span>
+                <span class="incorrect" id="snvaulttrackincorr"> :(</span>
+            </div>
+            <div class="content">
+                <label>
+                    <input type="radio" name="sn-vault-track" value="Yes" id="snvaulttrackyes" required> Yes
+                </label>
+                <br><label>
+                    <input type="radio" name="sn-vault-track" value="No" id="snvaulttrackno"> No
+                </label>
+                <div class="points-worth">
+                    <span class="points">
+                        Points : 
+                    </span>
+                    <span class="value">
+                        /5
+                    </span>
+                    <span id="snvaulttrackwrong" class="value-wrong">
+                        0
+                    </span>
+                    <span id="snvaulttrackright" class="value-right">
+                        5
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="par">
+            <div class="title">
                 TOTAL
             </div>
             <div class="content">
@@ -926,7 +1255,7 @@ Website is made by - InShOt (<a class="redirect" href="https://twitter.com/Gthlo
                         Points :
                     </span>
                     <span class="value">
-                        /113
+                        /158
                     </span>
                     <span id="total-points">
                         
@@ -934,11 +1263,20 @@ Website is made by - InShOt (<a class="redirect" href="https://twitter.com/Gthlo
                 </div>
             </div>
         </div>
-        <input type="submit" onClick="calculatepoints()">
+        <input type="Submit">
         </form>
+        </div>
+        <div class="par" id="calculate-closed">
+            <div class="title">
+                CALCULATE YOUR RESULTS
+            </div>
+            <div class="content">
+                This section of the website is currently closed. I will try to get it up as soon as the show ends. You currently can not calculate your results for previous shows. You may only calculate your results for the latest show which is probably happening now. Please note I am trying my best to get it back up swiftly. Please wait 1-2 minutes after the show ends and refresh your page. I will try to keep you updated on my Twitter. (<a class="redirect" href="https://twitter.com/Gthlopsdki?t=FZy9nNFb7zk8wAEUSJON3A&s=09">@Gthlopsdki</a>)
+            </div>
+        </div>
     </section>
     <section id="answers">
-        <div class="par">
+        <div class="par answers-open">
             <div class="title">
                 LATEST ANSWERS
             </div>
@@ -948,10 +1286,19 @@ Website is made by - InShOt (<a class="redirect" href="https://twitter.com/Gthlo
                 <div class="download-image"><a href="ballot answer.jpg" download>Download.</a></div>
             </div>
         </div>
+        <div class="par" id="answers-closed">
+            <div class="title">
+                LATEST ANSWERS
+            </div>
+            <div class="content">
+                There is currently no ‘latest answers’. It's possible Taylor is currently on stage. Please wait until the show ends, I'll come back to you as soon as possible with the latest answers. Keep refreshing your page for a few minutes after the show ends.
+            </div>
+        </div>
     </section>
 </body>
 <script src="navigation.js"></script>
 <script src="variables.js"></script>
 <script src="answers.js"></script>
 <script src="calculate.js"></script>
+<script src="animation.js"></script>
 </html>
