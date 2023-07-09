@@ -20,11 +20,11 @@ var guestanswer = ; // guestyes or guestno
 var unhingedanswer = ; // unhingedyes or unhingedno
 var mishapanswer = ; // mishapyes or mishapno
 
-var koianswer = ; // koiyes or koino
+var koianswer = koiyes; // koiyes or koino
 var banjoanswer = ; // banjoyes or banjono
 var hand13answer = ; // hand13yes or hand13no
 var armlyricsanswer = ; // armlyricsyes or armlyricsno
-var additionalsnanswer = ; // additionalsnyes or additionalsnno
+var additionalsnanswer = additionalsnyes; // additionalsnyes or additionalsnno
 var snvaulttrackanswer = ; // snvaulttrackyes or snvaulttrackno
 
 const guitaranswer = [];
