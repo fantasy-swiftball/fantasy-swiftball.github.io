@@ -326,9 +326,6 @@ document.getElementById("on-btn").onclick = function() {
     document.querySelectorAll(".radio-img").forEach(radioimg => {
         radioimg.style.display="flex";
     });
-    document.querySelectorAll(".additional-img").forEach(additionalimg => {
-        additionalimg.style.display="block";
-    });
 }
 
 document.getElementById("off-btn").onclick = function() {
@@ -338,8 +335,5 @@ document.getElementById("off-btn").onclick = function() {
     document.getElementById("on-btn").classList.remove('on-checked');
     document.querySelectorAll(".radio-img").forEach(radioimg => {
         radioimg.style.display="none";
-    });
-    document.querySelectorAll(".additional-img").forEach(additionalimg => {
-        additionalimg.style.display="none";
     });
 }

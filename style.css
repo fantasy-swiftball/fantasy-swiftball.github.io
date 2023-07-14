@@ -378,6 +378,3 @@ input[type="radio"] {
        color: var(--light-radio-color);
        border: none;
 }
-.additional-img {
-    display: block;
-}

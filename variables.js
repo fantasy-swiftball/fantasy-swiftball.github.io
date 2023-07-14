@@ -94,30 +94,6 @@ var mishapcorr = document.getElementById("mishap-correct");
 var mishapincorr = document.getElementById("mishap-incorrect");
 var mishapright = document.getElementById("mishap-right");
 var mishapwrong = document.getElementById("mishap-wrong");
-var koicorr = document.getElementById("koicorr");
-var koiincorr = document.getElementById("koiincorr");
-var koiright = document.getElementById("koiright");
-var koiwrong = document.getElementById("koiwrong");
-var banjocorr = document.getElementById("banjocorr");
-var banjoincorr = document.getElementById("banjoincorr");
-var banjoright = document.getElementById("banjoright");
-var banjowrong = document.getElementById("banjowrong");
-var hand13corr = document.getElementById("hand13corr");
-var hand13incorr = document.getElementById("hand13incorr");
-var hand13right = document.getElementById("hand13right");
-var hand13wrong = document.getElementById("hand13wrong");
-var armlyricscorr = document.getElementById("armlyricscorr");
-var armlyricsincorr = document.getElementById("armlyricsincorr");
-var armlyricsright = document.getElementById("armlyricsright");
-var armlyricswrong = document.getElementById("armlyricswrong");
-var additionalsncorr = document.getElementById("additionalsncorr");
-var additionalsnincorr = document.getElementById("additionalsnincorr");
-var additionalsnright = document.getElementById("additionalsnright");
-var additionalsnwrong = document.getElementById("additionalsnwrong");
-var snvaulttrackcorr = document.getElementById("snvaulttrackcorr");
-var snvaulttrackincorr = document.getElementById("snvaulttrackincorr");
-var snvaulttrackright = document.getElementById("snvaulttrackright");
-var snvaulttrackwrong = document.getElementById("snvaulttrackwrong");
 
 // radio buttons
 var pinkandblue = document.getElementById("pink-and-blue");
@@ -210,18 +186,6 @@ var mishapyes = document.getElementById("mishapyes");
 var mishapno = document.getElementById("mishapno");
 var guitarguess = document.getElementById("guitar-song-guess");
 var pianoguess = document.getElementById("piano-guess");
-var koiyes = document.getElementById("koiyes");
-var koino = document.getElementById("koino");
-var banjoyes = document.getElementById("banjoyes");
-var banjono = document.getElementById("banjono");
-var hand13yes = document.getElementById("hand13yes");
-var hand13no = document.getElementById("hand13no");
-var armlyricsyes = document.getElementById("armlyricsyes");
-var armlyricsno = document.getElementById("armlyricsno");
-var additionalsnyes = document.getElementById("additionalsnyes");
-var additionalsnno = document.getElementById("additionalsnno");
-var snvaulttrackyes = document.getElementById("snvaulttrackyes");
-var snvaulttrackno = document.getElementById("snvaulttrackno");
 
 // points program
 let a; // lover bodysuit points

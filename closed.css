@@ -23,8 +23,8 @@
 
 
 .answers-open {
-    display: block;
+    display: none;
 }
 #answers-closed {
-    display: none;
+    display: block;
 }
