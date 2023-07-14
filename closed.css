@@ -1,8 +1,8 @@
 .ballots-open {
-    display: none;
+    display: block;
 }
 #ballots-closed {
-    display: block;
+    display: none;
 }
 
 
@@ -15,10 +15,10 @@
 
 
 .calculate-open {
-    display: block;
+    display: none;
 }
 #calculate-closed {
-    display: none;
+    display: block;
 }
 
 
