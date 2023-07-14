@@ -378,3 +378,7 @@ input[type="radio"] {
        color: var(--light-radio-color);
        border: none;
 }
+.logo img {
+    height: 60px !important;
+    width: auto !important;
+}
