@@ -382,3 +382,6 @@ input[type="radio"] {
     height: 60px !important;
     width: auto !important;
 }
+.ballots-link a {
+    color: var(--color-1);
+}
