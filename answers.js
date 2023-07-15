@@ -1,3 +1,4 @@
+alert("success");
 var loveranswer = blueandgold; // pinkandblue or blueandgold or purplewithtassels or newloverbodysuit
 var themananswer = blacktheman; // blacktheman or silvertheman or newtheman
 var loverguitaranswer = blueloverguitar; //pinkloverguitar or blueloverguitar
