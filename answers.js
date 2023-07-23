@@ -21,5 +21,5 @@ var unhingedanswer = unhingedyes; // unhingedyes or unhingedno
 var mishapanswer = mishapno; // mishapyes or mishapno
 
 
-const guitaranswer = ['TIWWCHNT', 'This is why we can’t have nice things'];
+const guitaranswer = ['TIWWCHNT', 'This is why we cant have nice things'];
 const pianoanswer = ['EHC'];
