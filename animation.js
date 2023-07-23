@@ -292,30 +292,42 @@ karmalightpink.onclick = function() {
 karmalightpink.parentElement.classList.add('checked');
 karmamulticolor.parentElement.classList.remove('checked');
 karmamagenta.parentElement.classList.remove('checked');
+karmablue.parentElement.classList.remove('checked');
 }
 
 karmamulticolor.onclick = function() {
 karmalightpink.parentElement.classList.remove('checked');
 karmamulticolor.parentElement.classList.add('checked');
 karmamagenta.parentElement.classList.remove('checked');
+karmablue.parentElement.classList.remove('checked');
 }
 
 karmamagenta.onclick = function() {
 karmalightpink.parentElement.classList.remove('checked');
 karmamulticolor.parentElement.classList.remove('checked');
 karmamagenta.parentElement.classList.add('checked');
+karmablue.parentElement.classList.remove('checked');
+}
+
+karmablue.onclick = function() {
+karmalightpink.parentElement.classList.remove('checked');
+karmamulticolor.parentElement.classList.remove('checked');
+karmamagenta.parentElement.classList.remove('checked');
+karmablue.parentElement.classList.add('checked');
 }
 
 newkarmajacket.onclick = function() {
 karmalightpink.parentElement.classList.remove('checked');
 karmamulticolor.parentElement.classList.remove('checked');
 karmamagenta.parentElement.classList.remove('checked');
+karmablue.parentElement.classList.remove('checked');
 }
 
 nokarmajacket.onclick = function() {
 karmalightpink.parentElement.classList.remove('checked');
 karmamulticolor.parentElement.classList.remove('checked');
 karmamagenta.parentElement.classList.remove('checked');
+karmablue.parentElement.classList.remove('checked');
 }
 
 document.getElementById("on-btn").onclick = function() {
