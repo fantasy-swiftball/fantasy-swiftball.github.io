@@ -1,4 +1,4 @@
-// mesages and points
+v mesages and points
 var lovercorr = document.getElementById("lover-correct");
 var loverincorr = document.getElementById("lover-incorrect");
 var loverright = document.getElementById("lover-right");
@@ -176,6 +176,7 @@ var newmrbodysuit = document.getElementById("mrnewbodysuit");
 var karmalightpink = document.getElementById("karmalightpink");
 var karmamulticolor = document.getElementById("karmamulticolor");
 var karmamagenta = document.getElementById("karmamagenta");
+var karmablue = document.getElementById("karmablue");
 var nokarmajacket = document.getElementById("nokarmajacket");
 var newkarmajacket = document.getElementById("newkarmajacket");
 var guestyes = document.getElementById("guestyes");
