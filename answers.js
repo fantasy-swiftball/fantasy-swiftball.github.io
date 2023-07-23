@@ -15,10 +15,10 @@ var pianospeechanswer = speechpianoyes; // speechpianoyes or speechpianono
 var pianoalbumanswer = pianored; // piano + album name
 var midnightsanswer = combomidnights; // lightbluemidnights or pinkmidnights or purplemidnights or silversequinmidnights or combomidnights or newmidnightsdress 
 var mranswer = mrblurple; // mrnavy or mrblurple or newmrbodysuit
-var karmaanswer = karmamagenta; // karmalightpink or or karmamulticolor or karmamagenta or nokarmajacket or newkarmajacket
+var karmaanswer = karmamagenta; // karmalightpink or or karmamulticolor or karmamagenta or karmablue or nokarmajacket or newkarmajacket
 var guestanswer = guestyes; // guestyes or guestno
 var unhingedanswer = unhingedyes; // unhingedyes or unhingedno
-var mishapanswer = mishapno; // mishapyes or mishapno
+var mishapanswer = mishapyes; // mishapyes or mishapno
 
 
 const guitaranswer = ['TIWWCHNT', 'This is why we cant have nice things'];
