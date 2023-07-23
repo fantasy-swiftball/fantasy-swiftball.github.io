@@ -402,10 +402,4 @@ function calculatepoints() {
     guestanswer.parentElement.classList.add("right-answer");
     unhingedanswer.parentElement.classList.add("right-answer");
     mishapanswer.parentElement.classList.add("right-answer");
-    koianswer.parentElement.classList.add("right-answer");
-    banjoanswer.parentElement.classList.add("right-answer");
-    hand13answer.parentElement.classList.add("right-answer");
-    armlyricsanswer.parentElement.classList.add("right-answer");
-    additionalsnanswer.parentElement.classList.add("right-answer");
-    snvaulttrackanswer.parentElement.classList.add("right-answer");
 }
