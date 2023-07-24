@@ -1,4 +1,4 @@
-v mesages and points
+// mesages and points
 var lovercorr = document.getElementById("lover-correct");
 var loverincorr = document.getElementById("lover-incorrect");
 var loverright = document.getElementById("lover-right");
