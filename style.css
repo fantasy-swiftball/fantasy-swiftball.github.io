@@ -6,6 +6,8 @@
     --par-bg: url(./par.jpg);
     --radio-color: #260d2a;
     --light-radio-color: #fefefe;
+    --right-color: #168117;
+    --wrong-color: #d60900;
 }
 * {
     margin: 0;
@@ -39,12 +41,6 @@ header {
     top: 0;
     z-index: 999;
 }
-.logo {
-    font-size: 18px;
-    font-weight: bold;
-    color: var(--color-1);    
-}
-
 .hamburger {
     display: none;
 }
@@ -226,11 +222,11 @@ input[type="radio"] {
 }
 .value-wrong {
     display: none;
-    color: #d60900;
+    color: var(--wrong-color);
 }
 .value-right {
     display: none;
-    color: #168117;
+    color: ;
 }
 .correct, .incorrect, .other-acoustic {
     font-weight: bold;
@@ -240,10 +236,10 @@ input[type="radio"] {
     margin-left: 3px;
 }
 .correct, .other-acoustic {
-    color: #168117;
+    color: var(--right-color);
 }
 .incorrect {
-    color: #d60900;
+    color: var(--wrong-color);
 }
 input[type="text"], input[type="text"]:focus {
     outline: none;
@@ -304,13 +300,13 @@ input[type="radio"] {
     accent-color: var(--radio-color);
 }
 .right-answer input[type="radio"] {
-    accent-color: #168117;
+    accent-color: var(--right-color);
 }
 .right-answer {
-    color: #168117;
+    color: var(--right-color);
 }
 .right-answer .radio-img {
-    border: 2.7px solid #168117;
+    border: 2.7px solid var(--right-color);
 }
 @media only screen and (min-width: 550px) {
     .par {
@@ -384,4 +380,21 @@ input[type="radio"] {
 }
 .ballots-link a {
     color: var(--color-1);
+}
+
+#guitar-song-guess.guess-correct {
+    color: var(--right-color);
+    border: 2px solid var(--right-color);
+}
+#guitar-song-guess.guess-incorrect {
+    color: var(--wrong-color);
+    border: 2px solid var(--wrong-color);
+}
+#piano-song-guess.guess-correct {
+    color: var(--right-color);
+    border: 2px solid var(--right-color);
+}
+#piano-song-guess.guess-incorrect {
+    color: var(--wrong-color);
+    border: 2px solid var(--wrong-color);
 }
