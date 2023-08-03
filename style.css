@@ -226,7 +226,7 @@ input[type="radio"] {
 }
 .value-right {
     display: none;
-    color: ;
+    color: var(--right-color);
 }
 .correct, .incorrect, .other-acoustic {
     font-weight: bold;
