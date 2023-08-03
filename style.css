@@ -390,11 +390,11 @@ input[type="radio"] {
     color: var(--wrong-color);
     border: 2px solid var(--wrong-color);
 }
-#piano-song-guess.guess-correct {
+#piano-guess.guess-correct {
     color: var(--right-color);
     border: 2px solid var(--right-color);
 }
-#piano-song-guess.guess-incorrect {
+#piano-guess.guess-incorrect {
     color: var(--wrong-color);
     border: 2px solid var(--wrong-color);
 }
