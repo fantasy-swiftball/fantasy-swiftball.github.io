@@ -24,7 +24,7 @@ var mishapanswer = mishapno; // mishapyes or mishapno
 
 var guitarsonganswer = "I Can See You";
 var pianosonganswer = "Maroon";
-var surpriseanswers = guitarsonganswer + " " + "(Guitar)" + pianosonganswer + " " + "(Piano)";
+var surpriseanswers = guitarsonganswer + " " + "(Guitar)" + " " + "/" + " " +  pianosonganswer + " " + "(Piano)";
 
 const guitaranswer = [guitarsonganswer, 'ICSY'];
 const pianoanswer = [pianosonganswer, 'maroon']; 
