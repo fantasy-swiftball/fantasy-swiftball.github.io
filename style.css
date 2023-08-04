@@ -398,3 +398,9 @@ input[type="radio"] {
     color: var(--wrong-color);
     border: 2px solid var(--wrong-color);
 }
+.guitar-piano-answers {
+    display: none;
+    margin: 10px 5px -12px 5px;
+    color: var(--right-color);
+    font-weight: bold;
+}
