@@ -22,5 +22,11 @@ var unhingedanswer = unhingedno; // unhingedyes or unhingedno
 var mishapanswer = mishapno; // mishapyes or mishapno
 
 
-const guitaranswer = ['I Can See You', 'ICSY'];
-const pianoanswer = ['Maroon', 'maroon']; 
+var guitarsonganswer = "I Can See You";
+var pianosonganswer = "Maroon";
+var surpriseanswers = guitarsonganswer + " " + "(Guitar)" + pianosonganswer + " " + "(Piano)";
+
+const guitaranswer = [guitarsonganswer, 'ICSY'];
+const pianoanswer = [pianosonganswer, 'maroon']; 
+
+alert(surpriseanswers);
