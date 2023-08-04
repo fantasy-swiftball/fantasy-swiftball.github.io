@@ -313,6 +313,8 @@ function calculatepoints() {
         guitarsongincorr.style.display="none";
         guitarsongwrong.style.display="none";
         guitarispiano.style.display="none";
+        guitarguess.classList.add("guess-correct");
+        guitarguess.classList.remove("guess-incorrect");
         n=6.5;
     }else if(pianoanswer.indexOf(guitarguess.value) !== -1) {
         guitarsongcorr.style.display="none";
@@ -320,6 +322,8 @@ function calculatepoints() {
         guitarsongincorr.style.display="none";
         guitarsongwrong.style.display="none";
         guitarispiano.style.display="block";
+        guitarguess.classList.add("guess-correct");
+        guitarguess.classList.remove("guess-incorrect");
         n=6.5;
     } else {
         guitarsongcorr.style.display="none";
@@ -327,6 +331,8 @@ function calculatepoints() {
         guitarsongincorr.style.display="block";
         guitarsongwrong.style.display="block";
         guitarispiano.style.display="none";
+        guitarguess.classList.add("guess-incorrect");
+        guitarguess.classList.remove("guess-correct");
         n=0;
     }
     
@@ -336,6 +342,8 @@ function calculatepoints() {
         pianosongincorr.style.display="none";
         pianosongwrong.style.display="none";
         pianoisguitar.style.display="none";
+        pianoguess.classList.add("guess-correct");
+        pianoguess.classList.remove("guess-incorrect");
         q=7;
     }else if(guitaranswer.indexOf(pianoguess.value) !== -1) {
         pianosongcorr.style.display="none";
@@ -343,6 +351,8 @@ function calculatepoints() {
         pianosongincorr.style.display="none";
         pianosongwrong.style.display="none";
         pianoisguitar.style.display="block";
+        pianoguess.classList.add("guess-correct");
+        pianoguess.classList.remove("guess-incorrect");
         q=7;
     } else {
         pianosongcorr.style.display="none";
@@ -350,6 +360,8 @@ function calculatepoints() {
         pianosongincorr.style.display="block";
         pianosongwrong.style.display="block";
         pianoisguitar.style.display="none";
+        pianoguess.classList.add("guess-incorrect");
+        pianoguess.classList.remove("guess-correct");
         q=0;
     }
     if(guitaranswer.indexOf(pianoguess.value) !==-1 && guitaranswer.indexOf(guitarguess.value) !==-1) {
@@ -366,6 +378,10 @@ function calculatepoints() {
         pianosongwrong.style.display="block";
         pianoisguitar.style.display="none";
         q=0;
+        guitarguess.classList.add("guess-correct");
+        guitarguess.classList.remove("guess-incorrect");
+        pianoguess.classList.add("guess-incorrect");
+        pianoguess.classList.remove("guess-correct");
     }
     if(pianoanswer.indexOf(pianoguess.value) !==-1 && pianoanswer.indexOf(guitarguess.value) !==-1) {
         alert("You have entered the same surprise song twice. It did turn out to be the Piano acoustic. Therefore, it will be counted correct in the Piano acoustic section, and you will be granted 7 points out of 7, but it will be counted wrong in the Guitar acoustic song and you will be granted 0 points out of 6.5.");
@@ -374,6 +390,10 @@ function calculatepoints() {
         guitarsongincorr.style.display="block";
         guitarsongwrong.style.display="block";
         guitarispiano.style.display="none";
+        guitarguess.classList.add("guess-incorrect");
+        guitarguess.classList.remove("guess-correct");
+        pianoguess.classList.add("guess-correct");
+        pianoguess.classList.remove("guess-incorrect");
         n=0;
         pianosongcorr.style.display="block";
         pianosongright.style.display="block";
@@ -417,4 +437,8 @@ function calculatepoints() {
     guestanswer.parentElement.classList.add("right-answer");
     unhingedanswer.parentElement.classList.add("right-answer");
     mishapanswer.parentElement.classList.add("right-answer");
+     document.getElementById("guitar-surprise-song-answers").innerHTML = surpriseanswers;
+document.getElementById("piano-surprise-song-answers").innerHTML = surpriseanswers;
+document.getElementById("guitar-surprise-song-answers").style.display="block";
+document.getElementById("piano-surprise-song-answers").style.display="block";
 }
