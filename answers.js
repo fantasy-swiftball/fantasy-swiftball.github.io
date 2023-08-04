@@ -15,11 +15,11 @@ var pianospeechanswer = speechpianono; // speechpianoyes or speechpianono
 var pianoalbumanswer = pianomidnights; // piano + album name
 var midnightsanswer = combomidnights; // lightbluemidnights or pinkmidnights or purplemidnights or silversequinmidnights or combomidnights or newmidnightsdress 
 var mranswer = mrblurple; // mrnavy or mrblurple or newmrbodysuit
-var karmaanswer = ; // karmalightpink or or karmamulticolor or karmamagenta or karmablue or nokarmajacket or newkarmajacket
+var karmaanswer = karmablue; // karmalightpink or or karmamulticolor or karmamagenta or karmablue or nokarmajacket or newkarmajacket
 var haimanswer = haimyes; // haimyes or haimno
 var guestanswer = guestno; // guestyes or guestno
-var unhingedanswer = ; // unhingedyes or unhingedno
-var mishapanswer = ; // mishapyes or mishapno
+var unhingedanswer = unhingedno; // unhingedyes or unhingedno
+var mishapanswer = mishapno; // mishapyes or mishapno
 
 
 const guitaranswer = ['I Can See You', 'ICSY'];
