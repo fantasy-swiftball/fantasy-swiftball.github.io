@@ -28,5 +28,3 @@ var surpriseanswers = guitarsonganswer + " " + "(Guitar)" + " " + "/" + " " +  p
 
 const guitaranswer = [guitarsonganswer, 'ICSY'];
 const pianoanswer = [pianosonganswer, 'maroon']; 
-
-alert(surpriseanswers);
