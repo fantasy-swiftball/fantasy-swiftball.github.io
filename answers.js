@@ -10,21 +10,21 @@ var shirt22answer = ALGOATMshirt; // WANEGBTshirt or WTSAEshirt or ALGOATMshirt 
 var folkloreanswer = creamfolklore; // purplefolklore or creamfolklore or pinkfolklore or greenfolklore or newfolkloredress
 var set1989answer = pink1989; // green1989 or orange1989 or pink1989 or new1989set
 var guitarspeechanswer = speechguitaryes; // speechguitaryes or speechguitarno
-var guitaralbumanswer = guitarsn; // guitar + album name
+var guitaralbumanswer = guitardebut; // guitar + album name
 var pianospeechanswer = speechpianono; // speechpianoyes or speechpianono
-var pianoalbumanswer = pianomidnights; // piano + album name
+var pianoalbumanswer = piano1989; // piano + album name
 var midnightsanswer = combomidnights; // lightbluemidnights or pinkmidnights or purplemidnights or silversequinmidnights or combomidnights or newmidnightsdress 
 var mranswer = mrblurple; // mrnavy or mrblurple or newmrbodysuit
 var karmaanswer = karmablue; // karmalightpink or or karmamulticolor or karmamagenta or karmablue or nokarmajacket or newkarmajacket
 var haimanswer = haimyes; // haimyes or haimno
 var guestanswer = guestno; // guestyes or guestno
-var unhingedanswer = unhingedno; // unhingedyes or unhingedno
+var unhingedanswer = unhingedyes; // unhingedyes or unhingedno
 var mishapanswer = mishapno; // mishapyes or mishapno
 
 
-var guitarsonganswer = "I Can See You";
-var pianosonganswer = "Maroon";
+var guitarsonganswer = "Our Song";
+var pianosonganswer = "You Are In Love";
 var surpriseanswers = guitarsonganswer + " " + "(Guitar)" + " " + "/" + " " +  pianosonganswer + " " + "(Piano)";
 
-const guitaranswer = [guitarsonganswer, 'ICSY'];
-const pianoanswer = [pianosonganswer, 'maroon']; 
+const guitaranswer = [guitarsonganswer, 'our song'];
+const pianoanswer = [pianosonganswer, 'YAIL']; 
