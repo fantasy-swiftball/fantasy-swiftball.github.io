@@ -28,3 +28,5 @@ var surpriseanswers = guitarsonganswer + " " + "(Guitar)" + " " + "/" + " " +  p
 
 const guitaranswer = [guitarsonganswer, 'dress'];
 const pianoanswer = [pianosonganswer, 'exile']; 
+
+alert("Ballot calculation is now updated for the show on 8/7");
