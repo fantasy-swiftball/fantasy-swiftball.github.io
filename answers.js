@@ -22,7 +22,7 @@ var unhingedanswer = unhingedno; // unhingedyes or unhingedno
 var mishapanswer = mishapyes; // mishapyes or mishapno
 
 
-var guitarsonganswer = "Deess";
+var guitarsonganswer = "Dress";
 var pianosonganswer = "Exile";
 var surpriseanswers = guitarsonganswer + " " + "(Guitar)" + " " + "/" + " " +  pianosonganswer + " " + "(Piano)";
 
