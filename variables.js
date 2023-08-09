@@ -1,4 +1,4 @@
-// messages and points
+// mesages and points
 var lovercorr = document.getElementById("lover-correct");
 var loverincorr = document.getElementById("lover-incorrect");
 var loverright = document.getElementById("lover-right");
@@ -106,6 +106,7 @@ var purplewithtassels = document.getElementById("purple-with-tassels");
 var newloverbodysuit = document.getElementById("new-lover-bodysuit");
 var blacktheman = document.getElementById("black-the-man-jacket");
 var silvertheman = document.getElementById("silver-the-man-jacket");
+var purpletheman = document.getElementById("purple-the-man-jacket");
 var newtheman = document.getElementById("new-the-man-jacket");
 var pinkloverguitar = document.getElementById("pink-lover-guitar");
 var blueloverguitar = document.getElementById("blue-lover-guitar");
@@ -176,6 +177,7 @@ var combomidnights = document.getElementById("combomidnights");
 var newmidnightsdress = document.getElementById("newmidnightsdress");
 var mrnavy = document.getElementById("mrnavy");
 var mrblurple = document.getElementById("mrblurple");
+mrrorschach = document.getElementById("mrorschach");
 var newmrbodysuit = document.getElementById("mrnewbodysuit");
 var karmalightpink = document.getElementById("karmalightpink");
 var karmamulticolor = document.getElementById("karmamulticolor");
