@@ -25,16 +25,25 @@ purplewithtassels.parentElement.classList.remove('checked');
 blacktheman.onclick = function() {
 blacktheman.parentElement.classList.add('checked');
 silvertheman.parentElement.classList.remove('checked');
+purpletheman.parentElement.classList.remove('checked');
 }
 
 silvertheman.onclick = function() {
 blacktheman.parentElement.classList.remove('checked');
 silvertheman.parentElement.classList.add('checked');
+purpletheman.parentElement.classList.remove('checked');
+}
+
+purpletheman.onclick = function() {
+    blacktheman.parentElement.classList.remove('checked');
+silvertheman.parentElement.classList.remove('checked');
+purpletheman.parentElement.classList.add('checked');
 }
 
 newtheman.onclick = function() {
 blacktheman.parentElement.classList.remove('checked');
 silvertheman.parentElement.classList.remove('checked');
+purpletheman.parentElement.classList.remove('checked');
 }
 
 pinkloverguitar.onclick = function() {
@@ -276,16 +285,25 @@ newmidnightsdress.onclick=function() {
 mrnavy.onclick = function() {
 mrnavy.parentElement.classList.add('checked');
 mrblurple.parentElement.classList.remove('checked');
+mrrorschach.parentElement.classList.remove('checked');
 }
 
 mrblurple.onclick = function() {
 mrnavy.parentElement.classList.remove('checked');
 mrblurple.parentElement.classList.add('checked');
+mrrorschach.parentElement.classList.remove('checked');
+}
+
+mrorschach.onclick = function() {
+   mrnavy.parentElement.classList.remove('checked');
+mrblurple.parentElement.classList.remove('checked');
+mrrorschach.parentElement.classList.add('checked');
 }
 
 newmrbodysuit.onclick = function() {
 mrnavy.parentElement.classList.remove('checked');
 mrblurple.parentElement.classList.remove('checked');
+mrrorschach.parentElement.classList.remove('checked');
 }
 
 karmalightpink.onclick = function() {
