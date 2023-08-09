@@ -294,7 +294,7 @@ mrblurple.parentElement.classList.add('checked');
 mrrorschach.parentElement.classList.remove('checked');
 }
 
-mrorschach.onclick = function() {
+mrrorschach.onclick = function() {
    mrnavy.parentElement.classList.remove('checked');
 mrblurple.parentElement.classList.remove('checked');
 mrrorschach.parentElement.classList.add('checked');
