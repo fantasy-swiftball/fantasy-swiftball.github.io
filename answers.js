@@ -11,8 +11,8 @@ var folkloreanswer = newfolkloredress; // purplefolklore or creamfolklore or pin
 var set1989answer = new1989set; // green1989 or orange1989 or pink1989 or new1989set
 var guitarspeechanswer = speechguitaryes; // speechguitaryes or speechguitarno
 var guitaralbumanswer = guitar1989; // guitar + album name
-var pianospeechanswer = ; // speechpianoyes or speechpianono
-var pianoalbumanswer = ; // piano + album name
+var pianospeechanswer = speechguitarno; // speechpianoyes or speechpianono
+var pianoalbumanswer = pianorep; // piano + album name
 var midnightsanswer = ; // lightbluemidnights or pinkmidnights or purplemidnights or silversequinmidnights or combomidnights or newmidnightsdress 
 var mranswer = ; // mrnavy or mrblurple or mrrorschach or newmrbodysuit
 var karmaanswer = ; // karmalightpink or or karmamulticolor or karmamagenta or karmablue or nokarmajacket or newkarmajacket
@@ -23,8 +23,8 @@ var mishapanswer = ; // mishapyes or mishapno
 
 
 var guitarsonganswer = "New Romantics";
-var pianosonganswer = "";
+var pianosonganswer = "New Years Day";
 var surpriseanswers = guitarsonganswer + " " + "(Guitar)" + " " + "/" + " " + pianosonganswer + " " + "(Piano)";
 
 const guitaranswer = [guitarsonganswer, 'new romantics'];
-const pianoanswer = [pianosonganswer, '']; 
+const pianoanswer = [pianosonganswer, 'NYD']; 
