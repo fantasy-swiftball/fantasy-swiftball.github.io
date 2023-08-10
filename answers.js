@@ -19,7 +19,7 @@ var karmaanswer = karmablue; // karmalightpink or or karmamulticolor or karmamag
 var haimanswer = haimyes; // haimyes or haimno
 var guestanswer = guestno; // guestyes or guestno
 var unhingedanswer = unhingedyes; // unhingedyes or unhingedno
-var mishapanswer = mishapno; // mishapyes or mishapno
+var mishapanswer = mishapyes; // mishapyes or mishapno
 
 
 var guitarsonganswer = "New Romantics";
@@ -28,3 +28,5 @@ var surpriseanswers = guitarsonganswer + " " + "(Guitar)" + " " + "/" + " " + pi
 
 const guitaranswer = [guitarsonganswer, 'new romantics'];
 const pianoanswer = [pianosonganswer, 'NYD']; 
+
+alert("Updated for 8/9 show");
