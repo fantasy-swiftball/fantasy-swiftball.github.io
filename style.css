@@ -1,11 +1,12 @@
 :root {
-    --color-1: #fefefe;
-    --color-2: #260d2a;
+    --color-1: /*#426383*/ #2e465c;
+    --color-2: black;
+    --nav-color: #d4cec2;
     --bg: url(./bg.jpg);
     --nav-bg: url(./nav.jpg);
-    --par-bg: url(./par.jpg);
-    --radio-color: #260d2a;
-    --light-radio-color: #fefefe;
+    --par-bg: url(./nav.jpg);
+    --radio-color: #2e465c;
+    --light-radio-color: #426383;
     --right-color: #168117;
     --wrong-color: #d60900;
 }
@@ -21,6 +22,9 @@ body {
     background-image: var(--bg);
     background-height: 100%;
     background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     user-select: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -60,12 +64,12 @@ header {
 }
 
 .nav-bar ul li a:hover {
-    color: var(--color-2);
+    color: var(--nav-color);
     background: var(--color-1);
 }
 
 .nav-bar ul li a.active {
-    color: var(--color-2);
+    color: var(--nav-color);
     background: var(--color-1);
 }
 
@@ -87,7 +91,7 @@ header {
     .hamburger .line {
         width: 30px;
         height: 3px;
-        background: #fefefe;
+        background: var(--color-1);
         margin: 6px 0;
         border-radius: 3px;
     }
@@ -131,7 +135,7 @@ header {
     margin: 50px auto 0 auto;
     border-radius: 8px;
     padding: 20px 20px;
-    color: var(--color-2);
+    color: var(--color-1);
 }
 .par .title {
     font-size: 22px;
@@ -147,10 +151,10 @@ header {
     font-weight: light;
     color: #000000c2;
 }
-#calculate, #ballots, #updates, #answers{
+#home, #ballots, #updates, #answers{
     display: none;
 }
-#home {
+#calculate {
     display: block;
 }
 .ballots-link{
@@ -172,19 +176,19 @@ header {
     margin-top: 15px;
     border-radius: 8px;
 }
-.download-image{
-    background-image: var(--nav-bg);
+.download-image {
+    background-image: var(--bg);
     width: 100%;
     height: 50px;
     margin: 15px auto 5px auto;
-    color: white;
+    color: var(--color-1);
     text-align: center !important;
     border-radius: 8px;
     font-size: 20px;
     padding: 15px 0;    
 }
 .download-image a {
-    color: white;
+    color: var(--color-1);
 }
 video {
     width: 30px;
@@ -262,7 +266,7 @@ input[type="submit"] {
     border-radius: 8px;
     font-size: 19px;
     background-image: var(--nav-bg);
-    color: white;
+    color: var(--color-1);
     margin: 40px 7.5% 0 7.5%;
     border: 0px;
     outline: none;
@@ -274,13 +278,14 @@ input[type="submit"] {
     width: 100%;
     height: 200px;
     border-radius: 8px;
-    background: white;
+    background: transparent;
     margin-top: 15px;
     padding: 8px 8px 8px 8px;
     white-space: nowrap;
     text-align: center;
     justify-content: center;
     display: flex;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .radio-img img{
     display: block;
@@ -294,10 +299,11 @@ input[type="submit"] {
 }
 
 .checked .radio-img {
-    border: 2.7px solid var(--radio-color);
+    border: 3.2px solid var(--radio-color);
 }
 input[type="radio"] {
     accent-color: var(--radio-color);
+    background: grey !important;
 }
 .right-answer input[type="radio"] {
     accent-color: var(--right-color);
@@ -306,7 +312,7 @@ input[type="radio"] {
     color: var(--right-color);
 }
 .right-answer .radio-img {
-    border: 2.7px solid var(--right-color);
+    border: 3.2px solid var(--right-color);
 }
 @media only screen and (min-width: 550px) {
     .par {
@@ -341,7 +347,7 @@ input[type="radio"] {
 .on-checked {
        display: flex;
        width: 70px;
-       background: var(--light-radio-color);
+       background: transparent;
        align-items: center;
        border-radius: 8px 0 0 8px;
        border: 3px solid var(--radio-color);
@@ -353,13 +359,13 @@ input[type="radio"] {
        background: var(--radio-color);
        align-items: center;
        border-radius: 8px 0 0 8px;
-       color: var(--light-radio-color);
+       color: var(--nav-color);
        border: 0;
 }
 .off-checked {
        display: flex;
        width: 70px;
-       background: var(--light-radio-color);
+       background: transparent;
        align-items: center;
        border-radius: 0 8px 8px 0;
        border: 3px solid var(--radio-color);
@@ -371,7 +377,7 @@ input[type="radio"] {
        background: var(--radio-color);
        align-items: center;
        border-radius: 0 8px 8px 0;
-       color: var(--light-radio-color);
+       color: var(--nav-color);
        border: none;
 }
 .logo img {
@@ -382,21 +388,25 @@ input[type="radio"] {
     color: var(--color-1);
 }
 
-#guitar-song-guess.guess-correct {
-    color: var(--right-color);
-    border: 2px solid var(--right-color);
+.ballots-link {
+    background-image: var(--bg);
 }
-#guitar-song-guess.guess-incorrect {
-    color: var(--wrong-color);
-    border: 2px solid var(--wrong-color);
-}
-#piano-guess.guess-correct {
-    color: var(--right-color);
-    border: 2px solid var(--right-color);
-}
-#piano-guess.guess-incorrect {
-    color: var(--wrong-color);
-    border: 2px solid var(--wrong-color);
+
+#guitar-song-guess.guess-correct { 
+     color: var(--right-color); 
+     border: 2px solid var(--right-color); 
+} 
+ #guitar-song-guess.guess-incorrect { 
+     color: var(--wrong-color); 
+     border: 2px solid var(--wrong-color); 
+} 
+#piano-guess.guess-correct { 
+     color: var(--right-color); 
+     border: 2px solid var(--right-color); 
+} 
+#piano-guess.guess-incorrect { 
+     color: var(--wrong-color); 
+     border: 2px solid var(--wrong-color); 
 }
 .guitar-piano-answers {
     display: none;
