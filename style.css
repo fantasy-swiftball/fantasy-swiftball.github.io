@@ -1,11 +1,11 @@
 :root {
-    --color-1: /*#426383*/ #2e465c;
+    --color-1: /*#426383 #2e465c*/ #555452;
     --color-2: black;
     --nav-color: #d4cec2;
     --bg: url(./bg.jpg);
     --nav-bg: url(./nav.jpg);
     --par-bg: url(./nav.jpg);
-    --radio-color: #2e465c;
+    --radio-color: /*#2e465c*/ #555452;
     --light-radio-color: #426383;
     --right-color: #168117;
     --wrong-color: #d60900;
