@@ -251,26 +251,13 @@ function calculatepoints() {
         t=0;
     }
     
-    if(haimanswer.checked) {
-        haimcorr.style.display="block";
-        haimincorr.style.display="none";
-        haimright.style.display="block";
-        haimwrong.style.display="none";
-        aa=1;
-    } else {
-        haimcorr.style.display="none";
-        haimincorr.style.display="block";
-        haimright.style.display="none";
-        haimwrong.style.display="block";
-        aa=0;
-    }
     
     if(guestanswer.checked) {
         guestcorr.style.display="block";
         guestright.style.display="block";
         guestincorr.style.display="none";
         guestwrong.style.display="none";
-        u=4;
+        u=5;
     }else {
          guestcorr.style.display="none";
         guestright.style.display="none";
@@ -403,13 +390,13 @@ function calculatepoints() {
         q=7;
     }
     if(pianoanswer.indexOf(pianoguess.value) !==-1 && guitaranswer.indexOf(guitarguess.value) !==-1) {
-        alert("Congratulations! You got both surprise songs correct!")
+        alert("Well done! You got both surprise songs correct!")
     }
     if(pianoanswer.indexOf(guitarguess.value) !==-1 && guitaranswer.indexOf(pianoguess.value) !==-1) {
-        alert("Congratulations! You got both surprise songs correct but with switched instruments. Don't worry, you still receive your points!")
+        alert("Well done! You got both surprise songs correct but with switched instruments. Don't worry, you still receive your points!")
     }
     
-    let x = a + b + c + d + e + f + g + h + i + j + k + l + m + n + o + p + q + r + s + t + u + v + w + aa; document.getElementById("total-points").innerHTML = x;
+    let x = a + b + c + d + e + f + g + h + i + j + k + l + m + n + o + p + q + r + s + t + u + v + w; document.getElementById("total-points").innerHTML = x;
     if(x>56){
         document.getElementById("total-points").style.color="#168117";
     } else{
@@ -433,7 +420,6 @@ function calculatepoints() {
     midnightsanswer.parentElement.classList.add("right-answer");
     mranswer.parentElement.classList.add("right-answer");
     karmaanswer.parentElement.classList.add("right-answer");
-   haimanswer.parentElement.classList.add("right-answer");
     guestanswer.parentElement.classList.add("right-answer");
     unhingedanswer.parentElement.classList.add("right-answer");
     mishapanswer.parentElement.classList.add("right-answer");
