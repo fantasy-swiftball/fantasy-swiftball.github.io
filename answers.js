@@ -5,26 +5,27 @@ var fearlessanswer = fringedress; // fringedress or goldnoodle or silvernoodle o
 var evermoreanswer = orangewithflowers; // orangewithflowers or bronzeevermore or newevermoredress
 var cpcheeranswer = cpless3; // cpless1 or cpless2 or cpless3 or cpmore3 or cprecord
 var repanswer = blackandredsnake; // blackandredsnake or newrepjumpsuit
-var snanswer = ; // pinkballgown or champagnegown or tissuegown or silvergown or cupcakegown or elsagown or newsngown
-var shirt22answer = ; // WANEGBTshirt or WTSAEshirt or ALGOATMshirt or new22shirt
-var folkloreanswer = ; // purplefolklore or creamfolklore or pinkfolklore or greenfolklore or bluefolklore or newfolkloredress
-var set1989answer = ; // green1989 or orange1989 or pink1989 or blue1989 or new1989set
-var guitarspeechanswer = ; // speechguitaryes or speechguitarno
-var guitaralbumanswer = ; // guitar + album name
-var pianospeechanswer = ; // speechpianoyes or speechpianono
-var pianoalbumanswer = ; // piano + album name
-var midnightsanswer = ; // lightbluemidnights or pinkmidnights or purplemidnights or silversequinmidnights or combomidnights or newmidnightsdress 
-var mranswer = ; // mrnavy or mrblurple or mrrorschach or newmrbodysuit
-var karmaanswer = ; // karmalightpink or or karmamulticolor or karmamagenta or karmablue or nokarmajacket or newkarmajacket
-var haimanswer = ; // haimyes or haimno
-var guestanswer = ; // guestyes or guestno
-var unhingedanswer = ; // unhingedyes or unhingedno
-var mishapanswer = ; // mishapyes or mishapno
+var snanswer = cupcakegown; // pinkballgown or champagnegown or tissuegown or silvergown or cupcakegown or elsagown or newsngown
+var shirt22answer = ALGOATMshirt; // WANEGBTshirt or WTSAEshirt or ALGOATMshirt or new22shirt
+var folkloreanswer = creamfolklore; // purplefolklore or creamfolklore or pinkfolklore or greenfolklore or bluefolklore or newfolkloredress
+var set1989answer = blue1989; // green1989 or orange1989 or pink1989 or blue1989 or new1989set
+var guitarspeechanswer = speechguitaryes; // speechguitaryes or speechguitarno
+var guitaralbumanswer = guitarlover; // guitar + album name
+var pianospeechanswer = speechpianono; // speechpianoyes or speechpianono
+var pianoalbumanswer = pianomidnights; // piano + album name
+var midnightsanswer = combomidnights; // lightbluemidnights or pinkmidnights or purplemidnights or silversequinmidnights or combomidnights or newmidnightsdress 
+var mranswer = mrblurple; // mrnavy or mrblurple or mrrorschach or newmrbodysuit
+var karmaanswer = karmablue; // karmalightpink or or karmamulticolor or karmamagenta or karmablue or nokarmajacket or newkarmajacket
+var guestanswer = guestno; // guestyes or guestno
+var unhingedanswer = unhingedno; // unhingedyes or unhingedno
+var mishapanswer = mishapno; // mishapyes or mishapno
 
 
-var guitarsonganswer = "";
-var pianosonganswer = "";
+var guitarsonganswer = "I Forgot That You Existed";
+var pianosonganswer = "Sweet Nothing";
 var surpriseanswers = guitarsonganswer + " " + "(Guitar)" + " " + "/" + " " + pianosonganswer + " " + "(Piano)";
 
-const guitaranswer = [guitarsonganswer, ''];
-const pianoanswer = [pianosonganswer, '']; 
+const guitaranswer = [guitarsonganswer, 'IFTYE'];
+const pianoanswer = [pianosonganswer, 'sweet nothing']; 
+
+alert("Updated for aug 25");
