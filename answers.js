@@ -1,8 +1,8 @@
 var loveranswer = pinkandblue; // pinkandblue or blueandgold or purplewithtassels or newloverbodysuit
 var themananswer = silvertheman; // blacktheman or silvertheman or purpletheman or newtheman
 var loverguitaranswer = pinkloverguitar; //pinkloverguitar or blueloverguitar
-var fearlessanswer = ; // fringedress or goldnoodle or silvernoodle or newfearlessdress
-var evermoreanswer = ; // orangewithflowers or bronzeevermore or newevermoredress
+var fearlessanswer = fringedress; // fringedress or goldnoodle or silvernoodle or newfearlessdress
+var evermoreanswer = orangewithflowers; // orangewithflowers or bronzeevermore or newevermoredress
 var cpcheeranswer = ; // cpless1 or cpless2 or cpless3 or cpmore3 or cprecord
 var repanswer = ; // blackandredsnake or newrepjumpsuit
 var snanswer = ; // pinkballgown or champagnegown or tissuegown or silvergown or cupcakegown or elsagown or newsngown
