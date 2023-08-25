@@ -1,4 +1,4 @@
-var loveranswer = ; // pinkandblue or blueandgold or purplewithtassels or newloverbodysuit
+var loveranswer = pinkandblue; // pinkandblue or blueandgold or purplewithtassels or newloverbodysuit
 var themananswer = ; // blacktheman or silvertheman or purpletheman or newtheman
 var loverguitaranswer = ; //pinkloverguitar or blueloverguitar
 var fearlessanswer = ; // fringedress or goldnoodle or silvernoodle or newfearlessdress
