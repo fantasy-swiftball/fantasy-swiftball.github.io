@@ -6,7 +6,7 @@ var evermoreanswer = orangewithflowers; // orangewithflowers or bronzeevermore o
 var cpcheeranswer = cpless3; // cpless1 or cpless2 or cpless3 or cpmore3 or cprecord
 var repanswer = blackandredsnake; // blackandredsnake or newrepjumpsuit
 var snanswer = champagnegown; // pinkballgown or champagnegown or tissuegown or silvergown or cupcakegown or elsagown or newsngown
-var shirt22answer = WANEGBT; // WANEGBTshirt or WTSAEshirt or ALGOATMshirt or new22shirt
+var shirt22answer = WANEGBTshirt; // WANEGBTshirt or WTSAEshirt or ALGOATMshirt or new22shirt
 var folkloreanswer = bluefolklore; // purplefolklore or creamfolklore or pinkfolklore or greenfolklore or bluefolklore or newfolkloredress
 var set1989answer = green1989; // green1989 or orange1989 or pink1989 or blue1989 or new1989set
 var guitarspeechanswer = speechguitaryes; // speechguitaryes or speechguitarno
@@ -27,3 +27,5 @@ var surpriseanswers = guitarsonganswer + " " + "(Guitar)" + " " + "/" + " " + pi
 
 const guitaranswer = [guitarsonganswer, 'cornelia street'];
 const pianoanswer = [pianosonganswer, 'YOYOK']; 
+
+alert("updated");
